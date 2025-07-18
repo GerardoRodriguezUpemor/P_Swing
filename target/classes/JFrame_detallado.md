@@ -30,13 +30,22 @@ public class MiVentana extends JFrame {
 }
 ```
 
-## Métodos Importantes
-- `setTitle(String)`: Cambia el título de la ventana.
-- `setSize(int, int)`: Define el tamaño de la ventana.
+
+## Métodos propios de JFrame
+
 - `setDefaultCloseOperation(int)`: Controla el comportamiento al cerrar la ventana.
+- `getDefaultCloseOperation()`: Obtiene el comportamiento de cierre actual.
 - `setContentPane(Container)`: Establece el panel principal de la ventana.
-- `setVisible(boolean)`: Muestra u oculta la ventana.
-- `setLocationRelativeTo(Component)`: Centra la ventana en pantalla.
+- `getContentPane()`: Obtiene el panel principal de la ventana.
+- `setJMenuBar(JMenuBar)`: Asigna una barra de menús a la ventana.
+- `getJMenuBar()`: Obtiene la barra de menús.
+- `getRootPane()`: Obtiene el root pane de la ventana.
+- `getGlassPane()`: Obtiene el glass pane de la ventana.
+- `setGlassPane(Component)`: Establece el glass pane de la ventana.
+- `getLayeredPane()`: Obtiene el layered pane de la ventana.
+- `setLayeredPane(JLayeredPane)`: Establece el layered pane de la ventana.
+
+> Nota: JFrame hereda la mayoría de sus métodos de `Frame`, `Window`, `Container` y `Component`. Aquí solo se listan los métodos propios y más característicos de JFrame.
 
 ## Limitaciones
 - Solo debe haber una ventana principal visible a la vez.
